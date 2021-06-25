@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> W1D2 DataTypesOperators </title>
+</head>
+<script>
+function myfunction(){
+    let users =  prompt("Enter the Volume in Quarts!","Volume of Quarts");
+    let volume = users * 0.95;
+    //let value = Numbers(users);
+    document.getElementById('answer').innerHTML = ("The Entered Data of the Volume is: " + volume + " liters");
+ }
+</script>
+<body>
+<h2><strong> Volume in Quarts </strong></h2>
+Enter the Volume in Quarts <input type="text"><br><br>
+<button type="button" onclick="myfunction()"> OutPut </button><br>
+<div id="answer"></div>
+</body>
+</html>

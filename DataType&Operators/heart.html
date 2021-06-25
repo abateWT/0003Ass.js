@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> W1D2Heart </title>
+</head>
+<script>
+function myfunction(){
+  let age = parseInt(document.getElementById("ageofuser").value);
+  let slowest = parseInt(0.65 * (220 - age));
+  let fastest = parseInt(0.85 * (220 - age));
+  document.getElementById("answer1").innerHTML = (`The Slowest rates necessary to strengthen her/his heart is: ${slowest} rate per minute`);
+  document.getElementById("answer2").innerHTML = (`The Fastest rates necessary to strengthen her/his heart is: ${ fastest}  rate per minute`);
+ }
+</script>
+<body>
+<h3><strong> Computing Slowest and Fastest Heart </strong></h3>
+Enter Your Age! <input type="text" id="ageofuser"><br><br>
+<button type="button" onclick="myfunction()"> Analysis </button><br><br>
+<div id="answer1"></div>
+<div id="answer2"></div>
+</body>
+</html>

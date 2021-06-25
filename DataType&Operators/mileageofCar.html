@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W1D2 CarMileage</title>
+</head>
+<script>
+
+function myfunction(){
+    let Begining = parseFloat(document.getElementById("Begining").value);
+    let Ending = parseFloat(document.getElementById("Ending").value);
+    let GallonsOfGas = parseFloat(document.getElementById("Gallons").value);
+    let outPut = parseFloat((Ending - Begining) / GallonsOfGas);
+    document.getElementById('answer').innerHTML = ("The Milleage of the Vehicle is: " + outPut);
+}
+</script>
+<body>
+<h3><strong> To Compute the Mileage of a vehicle</strong></h3><br>
+Enter the Begining of Odometer of the Car! <input type="text" id="Begining"><br><br>
+Enter the Ending/New of Odometer of the Car! <input type="text" id="Ending"><br><br>
+Enter the Number of Gallons of Gas Used for the Car! <input type="text" id="Gallons"><br><br>
+<button type="button" onclick="myfunction()"> The Milleage of the Vehicle </button>
+<div id="answer"></div>
+</body>
+</html>
